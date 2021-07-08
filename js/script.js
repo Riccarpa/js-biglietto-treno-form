@@ -65,11 +65,23 @@ generate.addEventListener('click', function() {
     trainCode.innerHTML = trainCodeValue;
     priceElement.innerHTML = price;
 
+
     //mostrare la sezione ticket
 
     ticketSection.classList.remove('hidden');
 });
+
+//reset dati 
 reset.addEventListener('click', function() {
+
+
+
+
+    //svuotare i dati input
+
+    nameInput.value = ''
+    kms.value = '200';
+    ageInput.value = 'maj';
 
     //selezionare gli elementi di ticket e svuotarli
 
@@ -79,7 +91,7 @@ reset.addEventListener('click', function() {
 
         var noContent = placeholdersElements[i];
         noContent.innerHTML = '';
-        console.log(placeholdersElements);
+
     }
 
     //chiudere la sezione
