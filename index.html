@@ -18,19 +18,19 @@
             <div class="form rounded white-20 ">
                 <div class="row">
                     <div class="col-4 text-center">
-                        <div class="name">
+                        <div class="name text-purple">
                             <label class="d-block" for="name">Nome Passeggero:</label>
                             <input type="text" value="" id="name" minlength="1">
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <div class="distance">
+                        <div class="distance text-purple">
                             <label class="d-block" for="kms">Distanza percorsa in Kms:</label>
                             <input type="number" id="kms" value="200" min="200">
                         </div>
                     </div>
                     <div class="col-4 text-center">
-                        <div class="age-range">
+                        <div class="age-range text-purple">
                             <label class="d-block" for="age">Fascia d'età:</label>
                             <select name="age-range" id="age">
                                 <option value="min">Minorenne</option>
@@ -41,8 +41,8 @@
                     </div>
                 </div>
                 <div class="buttons text-center ">
-                    <input type="button" id="generate" value="Genera il biglietto">
-                    <input type="button" id="reset" value="Resetta">
+                    <input class="me-5 text-purple p-1" type="button" id="generate" value="Genera il biglietto">
+                    <input class="me-5 text-purple p-1" type="button" id="reset" value="Annulla">
                 </div>
             </div>
         </div>
@@ -56,19 +56,19 @@
                 <div class="row">
 
                     <div class="col">
-                        <p class="">Nome Paseeggero: <span class="placeholder" id="name-on-ticket"></span></p>
+                        <p><strong>Nome Passeggero:</strong> <span class="placeholder" id="name-on-ticket"></span></p>
                     </div>
                     <div class="col">
-                        <p class="">Offerta: <span class="placeholder" id="tarif"></span></p>
+                        <p><strong>Offerta:</strong> <span class="placeholder" id="tarif"></span></p>
                     </div>
                     <div class="col">
-                        <p class="">Carrozza: <span class="placeholder" id="vagon"></span></p>
+                        <p><strong>Carrozza:</strong> <span class="placeholder" id="vagon"></span></p>
                     </div>
                     <div class="col">
-                        <p class="">Codice treno: <span class="placeholder" id="train-code"></span></p>
+                        <p><strong>Codice treno: </strong><span class="placeholder" id="train-code"></span></p>
                     </div>
                     <div class="col">
-                        <p class="">Prezzo biglietto: <span class="placeholder" id="price"></span></p>
+                        <p><strong>Prezzo biglietto: </strong><span class="placeholder" id="price"></span></p>
                     </div>
                 </div>
             </div>
