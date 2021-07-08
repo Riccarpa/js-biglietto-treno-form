@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <section id="data" class="mb-10">
+        <h1 class=" mb-10">Inserisci i tuoi dati di viaggio:</h1>
+
+        <div class="form mb-10">
+            <div class="name mb-10">
+                <label for="name">Nome Passeggero:</label>
+                <input type="text" value="" id="name" class="placeholder" minlength="1">
+            </div>
+
+            <div class="distance mb-10">
+                <label for="kms">Distanza percorsa in Kms:</label>
+                <input type="number" id="kms" class="placeholder" value="200" min="200">
+            </div>
+
+            <div class="age-range mb-10">
+                <label for="age">Fascia d'età:</label>
+                <select name="age-range" id="age" class="placeholder">
+                    <option value="min">Minorenne</option>
+                    <option value="maj">Maggiorenne</option>
+                    <option value="over65">Over 65</option>
+                </select>
+            </div>
+
+            <div class="buttons mb-10">
+                <input type="button" id="generate" value="Genera il biglietto">
+                <input type="button" id="reset" value="Resetta">
+            </div>
+        </div>
+        <hr>
+    </section>
+    <section class="hidden" id="ticket">
+        <div class="my-ticket">
+            <h1 class="mb-10">Il tuo biglietto</h1>
+            <p class="mb-10">Nome Paseeggero: <span id="name-on-ticket"></span></p>
+            <p class="mb-10">Offerta: <span id="tarif"></span></p>
+            <p class="mb-10">Carrozza: <span id="vagon"></span></p>
+            <p class="mb-10">Codice treno: <span id="train-code"></span></p>
+            <p class="mb-10">Prezzo biglietto: <span id="price"></span></p>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
