@@ -8,7 +8,7 @@ var generate = document.getElementById('generate');
 var reset = document.getElementById('reset');
 
 // data output
-// var placeholdersElements = document.getElementsByClassName('placeholder');
+
 var nameOutput = document.getElementById('name-on-ticket');
 var tarif = document.getElementById('tarif');
 var vagon = document.getElementById('vagon');
@@ -69,3 +69,21 @@ generate.addEventListener('click', function() {
 
     ticketSection.classList.remove('hidden');
 });
+reset.addEventListener('click', function() {
+
+    //selezionare gli elementi di ticket e svuotarli
+
+    var placeholdersElements = document.getElementsByClassName('placeholder');
+
+    for (i = 0; i < placeholdersElements.length; i++) {
+
+        var noContent = placeholdersElements[i];
+        noContent.innerHTML = '';
+        console.log(placeholdersElements);
+    }
+
+    //chiudere la sezione
+
+    ticketSection.classList.add('hidden');
+
+})
