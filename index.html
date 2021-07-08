@@ -6,48 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <section id="data" class="mb-10">
-        <h1 class=" mb-10">Inserisci i tuoi dati di viaggio:</h1>
+    <section id="data" class="">
 
-        <div class="form mb-10">
-            <div class="name mb-10">
-                <label for="name">Nome Passeggero:</label>
-                <input type="text" value="" id="name" minlength="1">
-            </div>
-
-            <div class="distance mb-10">
-                <label for="kms">Distanza percorsa in Kms:</label>
-                <input type="number" id="kms" value="200" min="200">
-            </div>
-
-            <div class="age-range mb-10">
-                <label for="age">Fascia d'età:</label>
-                <select name="age-range" id="age">
-                    <option value="min">Minorenne</option>
-                    <option selected value="maj">Maggiorenne</option>
-                    <option value="over65">Over 65</option>
-                </select>
-            </div>
-
-            <div class="buttons mb-10">
-                <input type="button" id="generate" value="Genera il biglietto">
-                <input type="button" id="reset" value="Resetta">
+        <div class="container">
+            <h1 class="text-white text-center">Inserisci i tuoi dati di viaggio:</h1>
+            <div class="form rounded white-20 ">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <div class="name">
+                            <label class="d-block" for="name">Nome Passeggero:</label>
+                            <input type="text" value="" id="name" minlength="1">
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="distance">
+                            <label class="d-block" for="kms">Distanza percorsa in Kms:</label>
+                            <input type="number" id="kms" value="200" min="200">
+                        </div>
+                    </div>
+                    <div class="col-4 text-center">
+                        <div class="age-range">
+                            <label class="d-block" for="age">Fascia d'età:</label>
+                            <select name="age-range" id="age">
+                                <option value="min">Minorenne</option>
+                                <option selected value="maj">Maggiorenne</option>
+                                <option value="over65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons text-center ">
+                    <input type="button" id="generate" value="Genera il biglietto">
+                    <input type="button" id="reset" value="Resetta">
+                </div>
             </div>
         </div>
-        <hr>
+
     </section>
     <section class="hidden" id="ticket">
-        <div class="my-ticket">
-            <h1 class="mb-10">Il tuo biglietto</h1>
-            <p class="mb-10">Nome Paseeggero: <span class="placeholder" id="name-on-ticket"></span></p>
-            <p class="mb-10">Offerta: <span class="placeholder" id="tarif"></span></p>
-            <p class="mb-10">Carrozza: <span class="placeholder" id="vagon"></span></p>
-            <p class="mb-10">Codice treno: <span class="placeholder" id="train-code"></span></p>
-            <p class="mb-10">Prezzo biglietto: <span class="placeholder" id="price"></span></p>
+        <div class="container">
+            <h1 class="text-white text-center">Il tuo biglietto:</h1>
+            <div class="my-ticket  white-20">
+                <h2 class="">Dettagli viaggio:</h2>
+                <div class="row">
+
+                    <div class="col">
+                        <p class="">Nome Paseeggero: <span class="placeholder" id="name-on-ticket"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="">Offerta: <span class="placeholder" id="tarif"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="">Carrozza: <span class="placeholder" id="vagon"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="">Codice treno: <span class="placeholder" id="train-code"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="">Prezzo biglietto: <span class="placeholder" id="price"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 

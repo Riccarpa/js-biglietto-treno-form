@@ -7,7 +7,8 @@
 }
 
 body {
-    margin: 50px;
+    background-color: rgb(150, 10, 103);
+    margin-top: 30px;
 }
 
 
@@ -19,4 +20,31 @@ body {
 
 .hidden {
     visibility: hidden;
+}
+
+
+/* main */
+
+.white-20 {
+    background-color: white;
+    height: 200px;
+    padding: 20px;
+}
+
+section .form .buttons {
+    margin-top: 50px;
+}
+
+section .my-ticket .row {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+section .my-ticket .row .col {
+    width: 20%;
+}
+
+section .my-ticket .row span {
+    display: block;
+    margin-top: 50px;
 }
